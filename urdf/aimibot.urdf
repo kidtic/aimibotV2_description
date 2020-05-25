@@ -440,7 +440,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5708 0 1.5708" />
       <geometry>
         <mesh
           filename="package://aimibot2_description/meshes/realsense_link.STL" />
@@ -465,10 +465,10 @@
     name="realsense_joint"
     type="fixed">
     <origin
-      xyz="0.22476 -0.5145 4.8928E-05"
-      rpy="1.5708 0 0" />
+      xyz="0.22476 4.8928E-05 0.5145 "
+      rpy="0 0 0" />  <!--这里设置相机姿态  -->
     <parent
-      link="base_link" />
+      link="base_footprint" />
     <child
       link="realsense_link" />
     <axis
